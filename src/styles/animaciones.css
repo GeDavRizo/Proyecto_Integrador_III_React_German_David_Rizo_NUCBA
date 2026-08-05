@@ -1,0 +1,178 @@
+/* ============================================
+   ANIMACIONES — animaciones.css
+   Todas las animaciones y keyframes del proyecto.
+   ============================================ */
+
+.hero-subtitle {
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero-title {
+  animation: fadeInUp 0.8s ease both;
+}
+
+.hero-desc {
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-cta {
+  animation: fadeInUp 0.8s ease 0.7s both;
+}
+
+.scroll-dot {
+  animation: scrollBounce 2s ease infinite;
+}
+
+.cart-item {
+  animation: slideInRight 0.2s ease;
+}
+
+.product-card {
+  animation: fadeInCard 0.4s ease forwards;
+}
+
+.product-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.product-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.product-card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.product-card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.product-card:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.product-card:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.success-ring {
+  animation: ringPulse 2s ease infinite;
+}
+
+.success-check {
+  animation: checkBounce 0.5s ease;
+}
+
+.success-overlay {
+  animation: fadeInOverlay 0.3s ease;
+}
+
+.success-modal {
+  animation: slideUpModal 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.payment-overlay {
+  animation: fadeInOverlay 0.3s ease;
+}
+
+.payment-modal {
+  animation: slideUpModal 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes scrollBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(12px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes ringPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes checkBounce {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpModal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

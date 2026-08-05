@@ -1,0 +1,168 @@
+/* ============================================
+  NOTAS EXPLICATIVAS DEL PROYECTO PARA MI ORGANIZACIÓN:
+   W-TECH — styles.css
+   E-commerce de Wearables Inteligentes
+   Vanilla CSS puro (sin frameworks externos)
+
+   PALETA DE COLORES (definida en Plan.md):
+   · Fondo página:   --bg-page:    #FAFAFA
+   · Fondo tarjeta:  --bg-white:   #FFFFFF
+   · Fondo sección:  --bg-section: #F2F2F2
+   · Borde suave:    --border-light:#E8E8E8
+   · Texto título:   --text-title: #111111
+   · Texto cuerpo:   --text-body:  #333333
+   · Texto muted:    --text-muted: #666666
+   · Acento purple:  --purple:     #7B6FBF (precios, botones)
+   · Acento cyan:    --cyan:       #2EB8BF (detalles mínimos)
+   ============================================ */
+
+/* ---- RESET BASE ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- VARIABLES — SISTEMA DE DISEÑO ---- */
+:root {
+  /* Fondos - Menos blancos, más grises suaves */
+  --bg-white: #f8f9fa;
+  --bg-page: #f0f2f5;
+  --bg-section: #e9ebee;
+
+  /* Bordes */
+  --border-light: #e8e8e88e;
+  --border-mid: #d4d4d4;
+
+  /* Texto */
+  --text-title: #111111;
+  --text-body: #333333;
+  --text-muted: #666666;
+  --text-hint: #999999;
+
+  /* Acento Purple (principal) */
+  --purple: #7b6fbf;
+  --purple-dark: #5a4f9a;
+  --purple-bg: rgba(100, 85, 200, 0.06);
+  --purple-border: rgba(100, 85, 200, 0.18);
+  --purple-glow: rgba(123, 111, 191, 0.22);
+
+  /* Acento Cyan (secundario / detalles mínimos) */
+  --cyan: #2eb8bf;
+  --cyan-dark: #21939a;
+  --cyan-bg: rgba(20, 180, 190, 0.06);
+  --cyan-border: rgba(20, 180, 190, 0.18);
+  --cyan-glow: rgba(46, 184, 191, 0.22);
+
+  /* Tipografías */
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Rajdhani", sans-serif;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 100px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+  --shadow-purple: 0 8px 30px rgba(123, 111, 191, 0.18);
+}
+
+/* ---- Utilidades de fuente ---- */
+.font-orbitron {
+  font-family: var(--font-display);
+}
+
+.font-rajdhani {
+  font-family: var(--font-body);
+}
+
+/* ---- BASE HTML / BODY ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+/* ---- Scrollbar personalizado ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-section);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 3px;
+}
+
+/* ---- Contenedor principal ---- */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Navbar and auth styles are handled via styled-components in
+   src/components/layout/Navbar/NavbarStyles.js. The legacy CSS
+   definitions were removed to avoid visual conflicts. */
+
+/* Copiado a src/styles/styles.css */
+
+/* ============================================
+  W-TECH — styles.css (copied to src/styles)
+*/
+
+:root {
+  --bg-white: #f8f9fa;
+}
+
+body {
+  background-color: var(--bg-white);
+}

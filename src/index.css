@@ -1,0 +1,10 @@
+/*
+  Archivo: src/index.css
+  Descripción: Archivo CSS con estilos globales o de componente.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

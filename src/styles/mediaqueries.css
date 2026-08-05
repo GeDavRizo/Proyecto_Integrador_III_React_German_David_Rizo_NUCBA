@@ -1,0 +1,184 @@
+/* ============================================
+   NOTAS EXPLICATIVAS DEL PROYECTO PARA MI ORGANIZACIÓN:
+   MEDIAQUERIES.CSS — W-TECH
+   Responsive design para dispositivos móviles y tablets.
+   ============================================ */
+
+/* ============================================
+   RESPONSIVE — MOBILE PEQUEÑO (max 480px)
+   Ajustes para pantallas muy angostas
+   ============================================ */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-social-btn {
+    align-self: center;
+  }
+
+  .cart-sidebar {
+    width: 100vw;
+  }
+
+  .bio-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filters-row {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.6rem;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET PEQUEÑA (600px+)
+   2 columnas para productos y novedades
+   ============================================ */
+@media (min-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .novedades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bio-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET / DESKTOP (860px+)
+   Navbar completo, bio en dos columnas,
+   títulos más grandes, padding mayor
+   ============================================ */
+@media (min-width: 860px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .bio-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .bio-text-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-submit-wrap {
+    text-align: left;
+  }
+
+  .contact-submit-wrap .btn-primary {
+    width: auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .success-title {
+    font-size: 3rem;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-bottom p:first-child {
+    text-align: left;
+  }
+  .footer-bottom .footer-credit {
+    text-align: center;
+  }
+  .footer-bottom p:last-child {
+    text-align: right;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — DESKTOP GRANDE (1024px+)
+   3 columnas para productos y novedades
+   ============================================ */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .novedades-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
+   RESPONSIVE — XL DESKTOP (1100px+)
+   4 columnas para el catálogo completo
+   ============================================ */
+@media (min-width: 1100px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
