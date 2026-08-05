@@ -159,15 +159,22 @@ export default function Checkout() {
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       dispatch(createOrderStart());
-      // Enviar confirmación de compra por email
-      await sendOrderConfirmationEmail({
-        email: values.email,
-        phone: values.cellphone,
-        orderNumber,
-        total: cartTotal,
-        items: cart,
-        customer: values.firstName,
-      });
+
+      let emailFailed = false;
+      try {
+        await sendOrderConfirmationEmail({
+          email: values.email,
+          phone: values.cellphone,
+          orderNumber,
+          total: cartTotal,
+          items: cart,
+          customer: values.firstName,
+        });
+      } catch (emailError) {
+        emailFailed = true;
+        console.warn("No se pudo enviar el email de confirmación:", emailError);
+      }
+
       dispatch(
         createOrderSuccess({
           orderNumber,
@@ -177,6 +184,7 @@ export default function Checkout() {
           items: cart,
           customer: values.firstName,
           createdAt: new Date().toISOString(),
+          emailFailed,
         }),
       );
 
@@ -188,6 +196,7 @@ export default function Checkout() {
           total: cartTotal,
           items: cart,
           customer: values.firstName,
+          emailFailed,
         },
       });
     } catch (err) {

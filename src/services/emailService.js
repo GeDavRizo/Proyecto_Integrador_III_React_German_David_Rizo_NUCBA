@@ -12,17 +12,42 @@ export const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 export const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 export const CONTACT_EMAIL = import.meta.env.VITE_CONTACT_EMAIL;
 
-// Validar que existen las variables de entorno
-if (!EMAILJS_PUBLIC_KEY) {
+const areEmailJsVarsConfigured = () => {
+  const missing = [];
+
+  if (!EMAILJS_PUBLIC_KEY) missing.push("VITE_EMAILJS_PUBLIC_KEY");
+  if (!EMAILJS_SERVICE_ID) missing.push("VITE_EMAILJS_SERVICE_ID");
+  if (!EMAILJS_TEMPLATE_ID) missing.push("VITE_EMAILJS_TEMPLATE_ID");
+  if (!CONTACT_EMAIL) missing.push("VITE_CONTACT_EMAIL");
+
+  if (missing.length > 0) {
+    console.warn(
+      `⚠️ EmailJS no está completamente configurado. Faltan las variables: ${missing.join(", ")}`,
+    );
+    return false;
+  }
+
+  return true;
+};
+
+const isEmailJsConfigured = areEmailJsVarsConfigured();
+
+if (isEmailJsConfigured) {
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+} else {
   console.warn(
-    "⚠️ VITE_EMAILJS_PUBLIC_KEY no configurada. Revisa tu archivo .env",
+    "EmailJS no se inicializó porque faltan variables de entorno. El envío de emails será omitido.",
   );
 }
 
-// Inicializar EmailJS
-emailjs.init(EMAILJS_PUBLIC_KEY);
-
 const sendEmail = async (templateParams) => {
+  if (!isEmailJsConfigured) {
+    console.warn(
+      "Omitiendo el envío de email porque EmailJS no está configurado.",
+    );
+    return null;
+  }
+
   try {
     const response = await emailjs.send(
       EMAILJS_SERVICE_ID,
