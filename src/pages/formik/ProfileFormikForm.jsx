@@ -244,4 +244,31 @@ const StyledForm = styled(Form)`
     font-size: 0.875rem;
     min-height: 1.2rem;
   }
+
+  button.auth-button {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      opacity 0.2s ease;
+    margin-top: 0.5rem;
+  }
+
+  button.auth-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.25);
+  }
+
+  button.auth-button:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+  }
 `;
