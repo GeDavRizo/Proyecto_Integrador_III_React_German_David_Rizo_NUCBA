@@ -2,7 +2,7 @@
   Descripción: Página o componente de checkout.
 */
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from "formik";
@@ -35,12 +35,16 @@ export default function Checkout() {
 
   const [step, setStep] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [formStepError, setFormStepError] = useState("");
 
-  const initialValuesWithUser = {
-    ...checkoutInitialValues,
-    firstName: user?.username || "",
-    email: user?.email || "",
-  };
+  const initialValuesWithUser = useMemo(
+    () => ({
+      ...checkoutInitialValues,
+      firstName: user?.username || "",
+      email: user?.email || "",
+    }),
+    [user?.email, user?.username],
+  );
 
   const step1Fields = [
     "firstName",
@@ -66,23 +70,59 @@ export default function Checkout() {
     return checkoutValidationSchema.pick(step2Fields);
   };
 
+  const stepValidationSchema = useMemo(
+    () => getValidationSchemaForStep(step),
+    [step],
+  );
+
   const formik = useFormik({
     initialValues: initialValuesWithUser,
-    validationSchema: getValidationSchemaForStep(step),
+    validationSchema: stepValidationSchema,
+    validateOnBlur: true,
+    validateOnChange: true,
     onSubmit: async (values) => {
-      if (step === 1) {
-        setStep(2);
-        return;
-      }
-
-      if (step === 2) {
-        setStep(3);
-        return;
-      }
-
       await handlePlaceOrder(values);
     },
   });
+
+  const touchFields = (fields) =>
+    fields.reduce((acc, field) => ({ ...acc, [field]: true }), {});
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setFormStepError("");
+
+    const fields = step === 1 ? step1Fields : step === 2 ? step2Fields : [];
+    const errors = await formik.validateForm();
+    formik.setTouched(touchFields(fields));
+
+    const stepErrors = fields.filter((field) => errors[field]);
+    if (stepErrors.length > 0) {
+      setFormStepError(
+        `Por favor completa correctamente todos los campos requeridos del paso ${step}.`,
+      );
+      return;
+    }
+
+    if (step === 1) {
+      setStep(2);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    if (step === 2) {
+      setStep(3);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    await formik.submitForm();
+  };
+
+  const FieldError = ({ name }) => {
+    const error = formik.touched[name] && formik.errors[name];
+    return error ? <div className="field-error">{error}</div> : null;
+  };
 
   if (cart.length === 0 && step === 1) {
     return (
@@ -186,8 +226,11 @@ export default function Checkout() {
             <div className="checkout-form">
               {/* PASO 1: Información de envío */}
               {step === 1 && (
-                <form onSubmit={formik.handleSubmit} className="form-section">
+                <form onSubmit={handleFormSubmit} className="form-section">
                   <h2>Información de Envío</h2>
+                  {formStepError && (
+                    <div className="step-error">{formStepError}</div>
+                  )}
 
                   <div className="form-row">
                     <div className="form-group">
@@ -198,9 +241,11 @@ export default function Checkout() {
                         name="firstName"
                         value={formik.values.firstName}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Tu nombre"
                         required
                       />
+                      <FieldError name="firstName" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="lastName">Apellido</label>
@@ -210,6 +255,7 @@ export default function Checkout() {
                         name="lastName"
                         value={formik.values.lastName}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Tu apellido"
                       />
                     </div>
@@ -224,9 +270,11 @@ export default function Checkout() {
                         name="email"
                         value={formik.values.email}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="tu@email.com"
                         required
                       />
+                      <FieldError name="email" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="cellphone">Teléfono *</label>
@@ -236,9 +284,11 @@ export default function Checkout() {
                         name="cellphone"
                         value={formik.values.cellphone}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="+54 9 1234-5678"
                         required
                       />
+                      <FieldError name="cellphone" />
                     </div>
                   </div>
 
@@ -250,9 +300,11 @@ export default function Checkout() {
                       name="address"
                       value={formik.values.address}
                       onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
                       placeholder="Calle, número y apto"
                       required
                     />
+                    <FieldError name="address" />
                   </div>
 
                   <div className="form-row">
@@ -264,9 +316,11 @@ export default function Checkout() {
                         name="city"
                         value={formik.values.city}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Tu ciudad"
                         required
                       />
+                      <FieldError name="city" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="country">País *</label>
@@ -276,9 +330,11 @@ export default function Checkout() {
                         name="country"
                         value={formik.values.country}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Argentina"
                         required
                       />
+                      <FieldError name="country" />
                     </div>
                   </div>
 
@@ -291,9 +347,11 @@ export default function Checkout() {
                         name="location"
                         value={formik.values.location}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Buenos Aires"
                         required
                       />
+                      <FieldError name="location" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="postalCode">Código Postal</label>
@@ -303,6 +361,7 @@ export default function Checkout() {
                         name="postalCode"
                         value={formik.values.postalCode}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="1234"
                       />
                     </div>
@@ -325,8 +384,11 @@ export default function Checkout() {
 
               {/* PASO 2: Información de pago */}
               {step === 2 && (
-                <form onSubmit={formik.handleSubmit} className="form-section">
+                <form onSubmit={handleFormSubmit} className="form-section">
                   <h2>Información de Pago</h2>
+                  {formStepError && (
+                    <div className="step-error">{formStepError}</div>
+                  )}
 
                   <div className="form-group">
                     <label htmlFor="cardName">Nombre en la Tarjeta *</label>
@@ -336,9 +398,11 @@ export default function Checkout() {
                       name="cardName"
                       value={formik.values.cardName}
                       onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
                       placeholder="Como aparece en la tarjeta"
                       required
                     />
+                    <FieldError name="cardName" />
                   </div>
 
                   <div className="form-group">
@@ -349,10 +413,12 @@ export default function Checkout() {
                       name="cardNumber"
                       value={formik.values.cardNumber}
                       onChange={handleCardNumberChange}
+                      onBlur={formik.handleBlur}
                       placeholder="1234 5678 9012 3456"
                       maxLength="19"
                       required
                     />
+                    <FieldError name="cardNumber" />
                   </div>
 
                   <div className="form-row">
@@ -364,10 +430,12 @@ export default function Checkout() {
                         name="cardExpiry"
                         value={formik.values.cardExpiry}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="12/25"
                         maxLength="5"
                         required
                       />
+                      <FieldError name="cardExpiry" />
                     </div>
                     <div className="form-group">
                       <label htmlFor="cardCVC">CVC *</label>
@@ -377,10 +445,12 @@ export default function Checkout() {
                         name="cardCVC"
                         value={formik.values.cardCVC}
                         onChange={handleCardCVCChange}
+                        onBlur={formik.handleBlur}
                         placeholder="123"
                         maxLength="4"
                         required
                       />
+                      <FieldError name="cardCVC" />
                     </div>
                   </div>
 
@@ -391,11 +461,13 @@ export default function Checkout() {
                       name="termsAccepted"
                       checked={formik.values.termsAccepted}
                       onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
                       required
                     />
                     <label htmlFor="termsAccepted">
                       Acepto los términos y condiciones de compra *
                     </label>
+                    <FieldError name="termsAccepted" />
                   </div>
 
                   <div className="form-actions">
