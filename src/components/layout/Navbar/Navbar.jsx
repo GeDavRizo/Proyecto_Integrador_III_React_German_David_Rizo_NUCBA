@@ -314,6 +314,39 @@ function Navbar() {
             </li>
           )}
         </ul>
+
+        <div className="mobile-auth-links">
+          {user ? (
+            <div className="mobile-user-menu">
+              <span className="user-welcome">¡Hola, {user.username}!</span>
+              <Link to={profilePath} className="auth-btn" onClick={closeMenu}>
+                Perfil
+              </Link>
+              <button
+                className="logout-btn"
+                onClick={() => {
+                  logout();
+                  closeMenu();
+                }}
+              >
+                Cerrar sesión
+              </button>
+            </div>
+          ) : (
+            <>
+              <Link to="/login" className="auth-btn" onClick={closeMenu}>
+                Iniciar sesión
+              </Link>
+              <Link
+                to="/registro"
+                className="auth-btn primary"
+                onClick={closeMenu}
+              >
+                Registrarse
+              </Link>
+            </>
+          )}
+        </div>
       </div>
     </NavbarContainer>
   );

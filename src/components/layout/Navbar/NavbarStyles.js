@@ -25,6 +25,7 @@ export const NavbarContainer = styled.header`
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -88,7 +89,8 @@ export const NavbarContainer = styled.header`
   .nav-actions {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
+    flex-wrap: wrap;
   }
 
   .cart-btn {
@@ -242,6 +244,13 @@ export const NavbarContainer = styled.header`
     }
   }
 
+  @media (max-width: 859px) {
+    .auth-links,
+    .user-menu {
+      display: none;
+    }
+  }
+
   .mobile-nav-link {
     display: block;
     padding: 0.75rem 0;
@@ -249,5 +258,20 @@ export const NavbarContainer = styled.header`
     color: #dbeafe;
     font-size: 0.95rem;
     text-decoration: none;
+  }
+
+  .mobile-auth-links,
+  .mobile-user-menu {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .mobile-auth-links .auth-btn,
+  .mobile-user-menu .auth-btn,
+  .mobile-user-menu .logout-btn {
+    width: 100%;
+    text-align: center;
   }
 `;
