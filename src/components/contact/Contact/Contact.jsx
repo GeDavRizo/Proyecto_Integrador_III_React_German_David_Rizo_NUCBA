@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/contact/Contact/Contact.jsx
-  Descripción: Sección de contacto.
+  Descripción: Sección de contacto con formulario e información de la página.
+  Funciones:
+    - Componente React Contact.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import ContactForm from "../ContactForm/ContactForm";

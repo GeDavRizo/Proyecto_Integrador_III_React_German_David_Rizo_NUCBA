@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/auth/RegisterForm/RegisterFormStyles.js
-  Descripción: Formulario de registro de usuario.
+  Descripción: Estilos del componente o página RegisterForm.
+  Funciones:
+    - Componente React RegisterFormContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

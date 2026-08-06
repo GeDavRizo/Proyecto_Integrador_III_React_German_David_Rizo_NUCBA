@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/ProductsGrid/ProductsGridStyles.js
-  Descripción: Grid de productos.
+  Descripción: Estilos del componente o página ProductsGrid.
+  Funciones:
+    - Componente React ProductsGridContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

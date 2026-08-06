@@ -1,4 +1,13 @@
-/* eslint-disable react-refresh/only-export-components */
+/*
+  Descripción: Archivo fuente del proyecto AuthContext.
+  Funciones:
+    - Componente React AuthProvider.
+    - useAuth
+    - Componente React AuthContext.
+  Requiere:
+    - React
+*/
+
 // AuthContext guarda el usuario actual y simula login/registro.
 // Los datos se guardan en localStorage para mantener la sesión al recargar.
 import { createContext, useContext, useState, useEffect } from "react";

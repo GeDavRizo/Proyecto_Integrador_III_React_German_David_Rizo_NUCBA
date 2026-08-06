@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/FilterBar/FilterBarStyles.js
-  Descripción: Barra de filtros de productos.
+  Descripción: Estilos del componente o página FilterBar.
+  Funciones:
+    - Componente React FilterBarContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

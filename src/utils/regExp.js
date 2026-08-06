@@ -1,6 +1,8 @@
 /*
-  Archivo: src/utils/regExp.js
-  Descripción: Expresiones regulares reutilizables.
+  Descripción: Expresiones regulares reutilizables para validación de formularios.
+  Funciones:
+    - regEmail
+    - emailRegex
 */
 
 export const regEmail =

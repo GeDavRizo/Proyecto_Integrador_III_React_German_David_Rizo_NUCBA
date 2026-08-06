@@ -1,6 +1,10 @@
 /*
-  Archivo: src/pages/formik/FormInput.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página React que muestra la ruta /forminput.
+  Funciones:
+    - Componente React FormInput.
+    - Componente React FormInput.
+  Requiere:
+    - Formik para formularios
 */
 
 import { Field, ErrorMessage } from "formik";

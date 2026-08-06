@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/contact/ContactForm/ContactFormStyles.js
-  Descripción: Formulario de contacto con validación.
+  Descripción: Estilos del componente o página ContactForm.
+  Funciones:
+    - Componente React ContactFormContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

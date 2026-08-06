@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/home/Hero/HeroStyles.js
-  Descripción: Sección hero de la página principal.
+  Descripción: Estilos del componente o página Hero.
+  Funciones:
+    - Componente React HeroContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

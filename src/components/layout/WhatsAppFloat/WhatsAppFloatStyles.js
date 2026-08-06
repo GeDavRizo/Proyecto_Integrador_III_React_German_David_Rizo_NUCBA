@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/layout/WhatsAppFloat/WhatsAppFloatStyles.js
-  Descripción: Layout principal de la aplicación.
+  Descripción: Estilos del componente o página WhatsAppFloat.
+  Funciones:
+    - Componente React WhatsAppFloatContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

@@ -1,3 +1,14 @@
+/*
+  Descripción: Archivo fuente del proyecto Routes.
+  Funciones:
+    - Componente React AppRoutes.
+    - Componente React AppRoutes.
+    - Componente React Routes.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
+*/
+
 // Routes.jsx define las rutas principales de la aplicación.
 // Cada ruta muestra una página distinta usando React Router.
 // Las rutas protegidas usan ProtectedRoute para controlar acceso.

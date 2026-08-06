@@ -1,6 +1,10 @@
 /*
-  Archivo: src/formik/validationSchema.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Esquema de validación con Yup para los formularios de la aplicación.
+  Funciones:
+    - checkoutValidationSchema
+    - registerValidationSchema
+  Requiere:
+    - Yup para validación
 */
 
 import * as Yup from "yup";

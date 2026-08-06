@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/NotFound/NotFound.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página que se muestra cuando la ruta no existe.
+  Funciones:
+    - Componente React NotFoundPage.
+    - Componente React NotFoundPage.
+    - Componente React NotFound.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { useNavigate } from "react-router-dom";

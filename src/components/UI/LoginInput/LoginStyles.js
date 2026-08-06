@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/UI/LoginInput/LoginStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página Login.
+  Funciones:
+    - Componente React InputContainerStyled.
+    - Componente React LoginInputStyled.
+    - Componente React ErrorMessageStyled.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

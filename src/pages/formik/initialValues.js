@@ -1,6 +1,7 @@
 /*
-  Archivo: src/pages/formik/initialValues.js
-  Descripción: Página React de la aplicación.
+  Descripción: Página React que muestra la ruta /initialvalues.
+  Funciones:
+    - initialValues
 */
 
 export const initialValues = {

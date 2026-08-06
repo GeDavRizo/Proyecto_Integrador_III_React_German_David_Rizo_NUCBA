@@ -1,3 +1,14 @@
+/*
+  Descripción: Archivo fuente del proyecto ContactForm.
+  Funciones:
+    - Componente React ContactForm.
+  Requiere:
+    - Formik para formularios
+    - Módulos locales del proyecto
+    - React
+    - Yup para validación
+*/
+
 // ContactForm.jsx maneja el formulario de contacto con Formik y validación.
 // Si todos los campos son válidos, envía el mensaje usando EmailJS.
 import { useState } from "react";

@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/contact/Contact/ContactStyles.js
-  Descripción: Sección de contacto.
+  Descripción: Estilos del componente o página Contact.
+  Funciones:
+    - Componente React ContactContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

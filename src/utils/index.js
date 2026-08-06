@@ -1,6 +1,5 @@
 /*
-  Archivo: src/utils/index.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Exporta utilidades compartidas para el proyecto.
 */
 
 export { default as formatDate } from "./formatDate";

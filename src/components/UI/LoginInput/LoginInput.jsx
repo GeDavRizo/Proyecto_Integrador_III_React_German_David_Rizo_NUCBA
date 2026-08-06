@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/UI/LoginInput/LoginInput.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto LoginInput.
+  Funciones:
+    - Componente React LoginInput.
+  Requiere:
+    - Formik para formularios
+    - React
 */
 
 import React from "react";

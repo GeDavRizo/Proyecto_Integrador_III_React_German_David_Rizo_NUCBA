@@ -1,6 +1,10 @@
 /*
-  Archivo: src/data/products.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto products.
+  Funciones:
+    - products
+    - novelties
+    - Componente React TotalProducts.
+    - Componente React Products.
 */
 
 export const products = [

@@ -1,4 +1,13 @@
-/* eslint-disable react-refresh/only-export-components */
+/*
+  Descripción: Archivo fuente del proyecto CartContext.
+  Funciones:
+    - Componente React CartProvider.
+    - useCart
+    - Componente React CartContext.
+  Requiere:
+    - React
+*/
+
 // CartContext administra el carrito de compras y su persistencia.
 // Guarda el carrito en localStorage para mantener los productos entre recargas.
 import { createContext, useContext, useState, useEffect } from "react";

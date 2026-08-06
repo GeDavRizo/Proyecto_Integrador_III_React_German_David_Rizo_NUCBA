@@ -1,3 +1,13 @@
+/*
+  Descripción: Cuadrícula que organiza y muestra los productos disponibles.
+  Funciones:
+    - Componente React ProductsGrid.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Redux
+*/
+
 // ProductsGrid.jsx muestra la lista de productos y aplica filtros.
 // También controla la paginación de "ver más" según el estado global.
 import { useEffect } from "react";

@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/checkout/Checkout/CheckoutStyles.js
-  Descripción: Página o componente de checkout.
+  Descripción: Estilos del componente o página Checkout.
+  Funciones:
+    - Componente React CheckoutContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

@@ -1,6 +1,11 @@
 /*
-  Archivo: src/redux/orders/ordersSlice.js
-  Descripción: Módulo Redux para manejar estado.
+  Descripción: Redux slice para manejar el estado de orders.
+  Funciones:
+    - selectOrders
+    - selectOrdersLoading
+    - selectOrdersError
+  Requiere:
+    - Redux Toolkit
 */
 
 import { createSlice } from "@reduxjs/toolkit";

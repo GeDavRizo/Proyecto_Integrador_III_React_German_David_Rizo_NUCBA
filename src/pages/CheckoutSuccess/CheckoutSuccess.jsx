@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/CheckoutSuccess/CheckoutSuccess.jsx
-  Descripción: Página o componente de checkout.
+  Descripción: Página de confirmación que muestra el éxito de la compra.
+  Funciones:
+    - Componente React CheckoutSuccessPage.
+    - Componente React CheckoutSuccessPage.
+    - Componente React CheckoutSuccess.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { useLocation, useNavigate } from "react-router-dom";

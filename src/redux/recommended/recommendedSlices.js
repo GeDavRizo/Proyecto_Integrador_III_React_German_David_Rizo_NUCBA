@@ -1,6 +1,10 @@
 /*
-  Archivo: src/redux/recommended/recommendedSlices.js
-  Descripción: Redux slice de productos recomendados.
+  Descripción: Archivo fuente del proyecto recommendedSlices.
+  Funciones:
+    - selectRecommended
+  Requiere:
+    - Módulos locales del proyecto
+    - Redux Toolkit
 */
 
 import { createSlice } from "@reduxjs/toolkit";

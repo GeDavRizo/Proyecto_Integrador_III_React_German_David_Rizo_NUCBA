@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/home/Hero/Hero.jsx
-  Descripción: Sección hero de la página principal.
+  Descripción: Archivo fuente del proyecto Hero.
+  Funciones:
+    - Componente React Hero.
+  Requiere:
+    - Framer Motion para animaciones
+    - Módulos locales del proyecto
+    - react-icons
 */
 
 import { motion } from "framer-motion";

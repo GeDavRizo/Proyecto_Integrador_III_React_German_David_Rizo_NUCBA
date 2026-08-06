@@ -1,6 +1,12 @@
 /*
-  Archivo: src/components/products/ProductDetail/ProductDetail.jsx
-  Descripción: Detalle de producto individual.
+  Descripción: Componente que muestra la información completa de un producto.
+  Funciones:
+    - Componente React ProductDetail.
+    - Componente React ProductDetail.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Redux
+    - React Router
 */
 
 import { useParams, useNavigate } from "react-router-dom";

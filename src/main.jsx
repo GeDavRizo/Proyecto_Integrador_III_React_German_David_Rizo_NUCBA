@@ -1,6 +1,11 @@
 /*
-  Archivo: src/main.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto main.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Redux
+    - ReactDOM
+    - redux-persist
 */
 
 import { StrictMode } from "react";

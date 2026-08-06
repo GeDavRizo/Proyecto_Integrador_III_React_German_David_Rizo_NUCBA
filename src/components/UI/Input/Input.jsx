@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/UI/Input/Input.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto Input.
+  Funciones:
+    - Componente React Input.
+    - Componente React Input.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

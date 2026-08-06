@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/layout/Navbar/NavbarStyles.js
-  Descripción: Barra de navegación principal.
+  Descripción: Estilos del componente o página Navbar.
+  Funciones:
+    - Componente React NavbarContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

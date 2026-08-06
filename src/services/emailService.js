@@ -1,6 +1,14 @@
 /*
-  Archivo: src/services/emailService.js
-  Descripción: Servicio para enviar emails con EmailJS.
+  Descripción: Servicio para enviar correos de contacto y confirmaciones de pedido usando EmailJS.
+  Funciones:
+    - Componente React EMAILJS_PUBLIC_KEY.
+    - Componente React EMAILJS_SERVICE_ID.
+    - Componente React EMAILJS_TEMPLATE_ID.
+    - Componente React CONTACT_EMAIL.
+    - sendContactEmail
+    - sendOrderConfirmationEmail
+  Requiere:
+    - EmailJS para envío de emails
 */
 
 import emailjs from "@emailjs/browser";

@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/home/Bio/Bio.jsx
-  Descripción: Sección de presentación o biografía.
+  Descripción: Archivo fuente del proyecto Bio.
+  Funciones:
+    - Componente React Bio.
+  Requiere:
+    - Framer Motion para animaciones
+    - Módulos locales del proyecto
 */
 
 import { motion } from "framer-motion";

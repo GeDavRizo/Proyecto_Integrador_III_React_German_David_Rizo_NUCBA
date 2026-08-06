@@ -1,6 +1,5 @@
 /*
-  Archivo: src/data/index.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto index.
 */
 
 export * from "./products";

@@ -1,6 +1,12 @@
 /*
-  Archivo: src/components/products/ProductCard/ProductCard.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Tarjeta que muestra los datos de un producto en la lista de productos.
+  Funciones:
+    - Componente React ProductCard.
+  Requiere:
+    - Framer Motion para animaciones
+    - Módulos locales del proyecto
+    - React Redux
+    - React Router
 */
 
 import { motion } from "framer-motion";

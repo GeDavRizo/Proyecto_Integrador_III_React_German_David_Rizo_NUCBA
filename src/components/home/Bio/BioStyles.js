@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/home/Bio/BioStyles.js
-  Descripción: Sección de presentación o biografía.
+  Descripción: Estilos del componente o página Bio.
+  Funciones:
+    - Componente React BioContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

@@ -1,5 +1,13 @@
 /*
-  Descripción: Página que muestra las órdenes del usuario.
+  Descripción: Página donde el usuario puede ver sus órdenes realizadas.
+  Funciones:
+    - Componente React MisOrdenes.
+    - Componente React MisOrdenes.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Redux
+    - React Router
 */
 
 import { useEffect } from "react";

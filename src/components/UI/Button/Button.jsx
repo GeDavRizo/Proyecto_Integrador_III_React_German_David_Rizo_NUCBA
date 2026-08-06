@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/UI/Button/Button.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto Button.
+  Funciones:
+    - Componente React Button.
+    - Componente React Button.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

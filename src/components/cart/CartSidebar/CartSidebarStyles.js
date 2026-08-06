@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/cart/CartSidebar/CartSidebarStyles.js
-  Descripción: Lógica del carrito de compras.
+  Descripción: Estilos del componente o página CartSidebar.
+  Funciones:
+    - Componente React CartSidebarContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

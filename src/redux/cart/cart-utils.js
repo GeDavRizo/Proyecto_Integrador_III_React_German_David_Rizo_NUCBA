@@ -1,6 +1,10 @@
 /*
-  Archivo: src/redux/cart/cart-utils.js
-  Descripción: Lógica del carrito de compras.
+  Descripción: Utilidades para gestionar cálculos y transformaciones del carrito de compras.
+  Funciones:
+    - addItemToCart
+    - removeItemFromCart
+    - calculateShippingCost
+    - resetShippingCost
 */
 
 export const addItemToCart = (cartItems, product) => {

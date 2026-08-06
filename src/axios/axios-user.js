@@ -1,6 +1,11 @@
 /*
-  Archivo: src/axios/axios-user.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Funciones para llamadas relacionadas con el usuario usando Axios.
+  Funciones:
+    - createUser
+    - loginUser
+  Requiere:
+    - Axios para llamadas HTTP
+    - Módulos locales del proyecto
 */
 
 import axios from "axios";

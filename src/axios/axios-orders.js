@@ -1,6 +1,13 @@
 /*
-  Archivo: src/axios/axios-orders.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto. Contiene funciones para interactuar con la API de órdenes usando Axios.
+  Funciones:
+    - getOrders: Obtiene todas las órdenes del usuario.
+    - createOrder: Crea una nueva orden en la base de datos. 
+    Maneja errores y actualiza el estado de Redux según corresponda.
+    Requiere:
+    - BASE_URL: URL base de la API, definida en utils.js.
+    - Redux
+    - Axios para realizar las solicitudes HTTP.
 */
 
 import axios from "axios";

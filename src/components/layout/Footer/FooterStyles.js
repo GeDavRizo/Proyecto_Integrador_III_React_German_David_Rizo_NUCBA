@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/layout/Footer/FooterStyles.js
-  Descripción: Pie de página del sitio.
+  Descripción: Estilos del componente o página Footer.
+  Funciones:
+    - Componente React FooterContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

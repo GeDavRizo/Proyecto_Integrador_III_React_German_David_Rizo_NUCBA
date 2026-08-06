@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/MisOrdenes/CardsMisOrdenes.jsx
-  Descripción: Muestra la lista de órdenes del usuario.
+  Descripción: Archivo fuente del proyecto CardsMisOrdenes.
+  Funciones:
+    - formatDate
+    - Componente React CardsMisOrdenes.
+  Requiere:
+    - React Redux
+    - styled-components para estilos
 */
 
 import { useSelector } from "react-redux";

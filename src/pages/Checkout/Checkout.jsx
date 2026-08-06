@@ -1,6 +1,11 @@
 /*
-  Archivo: src/pages/Checkout/Checkout.jsx
-  Descripción: Página o componente de checkout.
+  Descripción: Página de checkout para completar la compra.
+  Funciones:
+    - Componente React CheckoutPage.
+    - Componente React CheckoutPage.
+    - Componente React Checkout.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import Checkout from "../../components/checkout/Checkout/Checkout";

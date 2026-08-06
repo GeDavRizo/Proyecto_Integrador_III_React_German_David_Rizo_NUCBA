@@ -1,6 +1,12 @@
 /*
-  Archivo: src/components/Recomendados/CardRecomendacion.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto CardRecomendacion.
+  Funciones:
+    - Componente React CardRecomendacion.
+    - Componente React CardRecomendacion.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Redux
+    - React Router
 */
 
 import { useDispatch } from "react-redux";

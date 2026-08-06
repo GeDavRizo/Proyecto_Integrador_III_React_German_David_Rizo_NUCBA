@@ -1,6 +1,14 @@
 /*
-  Archivo: src/redux/cart/CartSlice.js
-  Descripción: Lógica del carrito de compras.
+  Descripción: Redux slice para manejar el estado de cart.
+  Funciones:
+    - selectCartHidden
+    - selectCartItems
+    - selectCartShippingCost
+    - selectCartSubtotal
+    - selectCartTotal
+    - selectCartCount
+  Requiere:
+    - Redux Toolkit
 */
 
 import { createSlice } from "@reduxjs/toolkit";

@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/products/FilterBar/FilterBar.jsx
-  Descripción: Barra de filtros de productos.
+  Descripción: Barra de filtros que permite buscar productos por categoría y precio.
+  Funciones:
+    - Componente React FilterBar.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Redux
 */
 
 import { useSelector } from "react-redux";

@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/cart/SuccessModal/SuccessModalStyles.js
-  Descripción: Modal de éxito de pago.
+  Descripción: Estilos del componente o página SuccessModal.
+  Funciones:
+    - Componente React SuccessModalContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

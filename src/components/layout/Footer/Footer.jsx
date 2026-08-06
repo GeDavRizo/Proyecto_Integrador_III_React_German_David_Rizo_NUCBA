@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/layout/Footer/Footer.jsx
-  Descripción: Pie de página del sitio.
+  Descripción: Archivo fuente del proyecto Footer.
+  Funciones:
+    - Componente React Footer.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { Link } from "react-router-dom";

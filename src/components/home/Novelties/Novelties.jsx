@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/home/Novelties/Novelties.jsx
-  Descripción: Sección de novedades del home.
+  Descripción: Archivo fuente del proyecto Novelties.
+  Funciones:
+    - Componente React Novelties.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import { novelties } from "../../../data";

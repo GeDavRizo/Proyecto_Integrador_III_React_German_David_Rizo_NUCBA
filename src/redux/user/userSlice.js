@@ -1,6 +1,7 @@
 /*
-  Archivo: src/redux/user/userSlice.js
-  Descripción: Redux slice de usuario.
+  Descripción: Redux slice para manejar el estado de user.
+  Requiere:
+    - Redux Toolkit
 */
 
 import { createSlice } from "@reduxjs/toolkit";

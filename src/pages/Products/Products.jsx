@@ -1,6 +1,10 @@
 /*
-  Archivo: src/pages/Products/Products.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página que muestra todos los productos disponibles.
+  Funciones:
+    - Componente React ProductsPage.
+    - Componente React Products.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import Products from "../../components/products/Products/Products";

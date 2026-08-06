@@ -1,6 +1,9 @@
 /*
-  Archivo: src/styles/GlobalStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página Global.
+  Funciones:
+    - Componente React GlobalStyles.
+  Requiere:
+    - styled-components para estilos
 */
 
 import { createGlobalStyle } from "styled-components";

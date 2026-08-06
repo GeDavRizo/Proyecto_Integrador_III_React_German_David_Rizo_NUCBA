@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/ProductCard/ProductCardStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página ProductCard.
+  Funciones:
+    - Componente React ProductCardContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

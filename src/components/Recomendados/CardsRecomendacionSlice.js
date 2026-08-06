@@ -1,6 +1,5 @@
 /*
-  Archivo: src/components/Recomendados/CardsRecomendacionSlice.js
-  Descripción: Módulo Redux para manejar estado.
+  Descripción: Archivo fuente del proyecto CardsRecomendacionSlice.
 */
 
 export {

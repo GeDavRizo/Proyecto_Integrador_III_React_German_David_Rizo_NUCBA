@@ -1,6 +1,10 @@
 /*
-  Archivo: src/pages/Home/Home.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página principal de la tienda con hero, productos destacados, recomendados y contacto.
+  Funciones:
+    - Componente React HomePage.
+    - Componente React Home.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import Hero from "../../components/home/Hero/Hero";

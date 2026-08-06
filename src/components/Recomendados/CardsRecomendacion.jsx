@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/Recomendados/CardsRecomendacion.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto CardsRecomendacion.
+  Funciones:
+    - Componente React CardsRecomendacion.
+    - Componente React CardsRecomendacion.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Redux
 */
 
 import { useDispatch, useSelector } from "react-redux";

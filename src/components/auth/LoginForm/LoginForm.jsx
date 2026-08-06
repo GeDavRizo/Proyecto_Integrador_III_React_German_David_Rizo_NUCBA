@@ -1,6 +1,12 @@
 /*
-  Archivo: src/components/auth/LoginForm/LoginForm.jsx
-  Descripción: Formulario de ingreso de usuario.
+  Descripción: Formulario de usuario para login en la aplicación.
+  Funciones:
+    - Componente React LoginForm.
+    - Componente React LoginForm.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Router
 */
 
 import { useState } from "react";

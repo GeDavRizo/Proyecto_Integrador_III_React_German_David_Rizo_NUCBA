@@ -1,5 +1,14 @@
 /*
-  Descripción: Página o componente de checkout.
+  Descripción: Componente principal de checkout con formulario, validaciones y confirmación de pedido.
+  Funciones:
+    - Componente React Checkout.
+    - Componente React Checkout.
+  Requiere:
+    - Formik para formularios
+    - Módulos locales del proyecto
+    - React
+    - React Redux
+    - React Router
 */
 
 import { useMemo, useState } from "react";

@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/Login/Login.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página de inicio de sesión para usuarios.
+  Funciones:
+    - Componente React LoginPage.
+    - Componente React LoginPage.
+    - Componente React Login.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { useAuth } from "../../context/AuthContext";

@@ -1,6 +1,7 @@
 /*
-  Archivo: src/data/Categories.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto Categories.
+  Funciones:
+    - categories
 */
 
 export const categories = [

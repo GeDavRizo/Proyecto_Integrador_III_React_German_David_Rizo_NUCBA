@@ -1,3 +1,13 @@
+/*
+  Descripción: Archivo fuente del proyecto App.
+  Funciones:
+    - Componente React AppContent.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Router
+*/
+
 // App.js es el punto de entrada de la aplicación.
 // Aquí se cargan los estilos globales, el router y el contexto de autenticación.
 import * as React from "react";

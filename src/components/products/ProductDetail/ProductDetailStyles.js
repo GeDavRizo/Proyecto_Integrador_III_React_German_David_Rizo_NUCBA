@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/ProductDetail/ProductDetailStyles.js
-  Descripción: Detalle de producto individual.
+  Descripción: Estilos del componente o página ProductDetail.
+  Funciones:
+    - Componente React ProductDetailContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

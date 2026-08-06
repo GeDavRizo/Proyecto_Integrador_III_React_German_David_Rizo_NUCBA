@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/ProtectedRoute.jsx
-  Descripción: Ruta protegida para usuarios autenticados.
+  Descripción: Componente de ruta protegida que restringe acceso a usuarios autenticados.
+  Funciones:
+    - Componente React ProtectedRoute.
+    - Componente React ProtectedRoute.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { useLocation, Navigate } from "react-router-dom";

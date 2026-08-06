@@ -1,6 +1,7 @@
 /*
-  Archivo: src/utils/formatDate.js
-  Descripción: Función para formatear fechas.
+  Descripción: Función para formatear fechas de forma consistente.
+  Funciones:
+    - formatDate
 */
 
 export const formatDate = (date) => {

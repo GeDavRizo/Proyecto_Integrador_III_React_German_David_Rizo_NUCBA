@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/cart/PaymentModal/PaymentModalStyles.js
-  Descripción: Modal de pago en el carrito.
+  Descripción: Estilos del componente o página PaymentModal.
+  Funciones:
+    - Componente React PaymentModalContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

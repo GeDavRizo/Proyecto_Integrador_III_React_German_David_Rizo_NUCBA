@@ -1,6 +1,8 @@
 /*
-  Archivo: src/formik/initialValues.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Valores iniciales para formularios gestionados con Formik.
+  Funciones:
+    - checkoutInitialValues
+    - registerInitialValues
 */
 
 export const checkoutInitialValues = {

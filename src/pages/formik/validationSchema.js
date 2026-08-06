@@ -1,6 +1,9 @@
 /*
-  Archivo: src/pages/formik/validationSchema.js
-  Descripción: Página React de la aplicación.
+  Descripción: Página React que muestra la ruta /validationschema.
+  Funciones:
+    - validationSchema
+  Requiere:
+    - Yup para validación
 */
 
 import * as Yup from "yup";

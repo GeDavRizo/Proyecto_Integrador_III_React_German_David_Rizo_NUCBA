@@ -1,6 +1,14 @@
 /*
-  Archivo: src/pages/Profile/Profile.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página de perfil donde el usuario puede ver su información.
+  Funciones:
+    - getOptions
+    - Componente React ProfilePage.
+    - Componente React Profile.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Router
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

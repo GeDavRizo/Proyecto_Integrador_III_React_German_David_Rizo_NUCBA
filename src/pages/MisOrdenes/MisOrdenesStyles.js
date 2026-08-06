@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/MisOrdenes/MisOrdenesStyles.js
-  Descripción: Estilos para la página de mis órdenes.
+  Descripción: Estilos del componente o página MisOrdenes.
+  Funciones:
+    - Componente React MisOrdenesContainerStyled.
+    - Componente React MisOrdenesTitleStyled.
+    - Componente React MisOrdenesBtnContainerStyled.
+    - Componente React MisOrdenesPatternStyled.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

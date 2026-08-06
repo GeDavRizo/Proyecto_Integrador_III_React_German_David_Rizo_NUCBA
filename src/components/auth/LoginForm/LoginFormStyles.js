@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/auth/LoginForm/LoginFormStyles.js
-  Descripción: Formulario de ingreso de usuario.
+  Descripción: Estilos del componente o página LoginForm.
+  Funciones:
+    - Componente React LoginFormContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

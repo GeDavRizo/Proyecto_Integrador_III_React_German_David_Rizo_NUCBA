@@ -1,6 +1,9 @@
 /*
-  Archivo: src/hooks/useRedirect.js
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Hook personalizado para lógica reutilizable de React.
+  Requiere:
+    - React
+    - React Redux
+    - React Router
 */
 
 import { useEffect } from "react";

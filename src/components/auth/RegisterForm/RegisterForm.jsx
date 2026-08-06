@@ -1,6 +1,12 @@
 /*
-  Archivo: src/components/auth/RegisterForm/RegisterForm.jsx
-  Descripción: Formulario de registro de usuario.
+  Descripción: Formulario de usuario para register en la aplicación.
+  Funciones:
+    - Componente React RegisterForm.
+    - Componente React RegisterForm.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Router
 */
 
 import { useState } from "react";

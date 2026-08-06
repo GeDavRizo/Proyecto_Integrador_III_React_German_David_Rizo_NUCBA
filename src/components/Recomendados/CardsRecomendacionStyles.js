@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/Recomendados/CardsRecomendacionStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página CardsRecomendacion.
+  Funciones:
+    - Componente React RecommendedContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

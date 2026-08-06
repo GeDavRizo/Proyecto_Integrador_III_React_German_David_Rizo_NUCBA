@@ -1,6 +1,9 @@
 /*
-  Archivo: src/pages/NotFound/NotFoundStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página NotFound.
+  Funciones:
+    - Componente React NotFoundContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

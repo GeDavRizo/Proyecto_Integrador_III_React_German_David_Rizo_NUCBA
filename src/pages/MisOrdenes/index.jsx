@@ -1,6 +1,7 @@
 /*
-  Archivo: src/pages/MisOrdenes/index.jsx
-  Descripción: Exporta la página de mis órdenes.
+  Descripción: Página React que muestra la ruta /index.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import MisOrdenes from "./MisOrdenes";

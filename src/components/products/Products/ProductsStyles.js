@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/Products/ProductsStyles.js
-  Descripción: Estilos para este componente o página.
+  Descripción: Estilos del componente o página Products.
+  Funciones:
+    - Componente React ProductsContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

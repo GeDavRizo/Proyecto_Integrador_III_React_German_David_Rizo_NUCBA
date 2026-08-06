@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/formik/ProfileFormikForm.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página React que muestra la ruta /profileformikform.
+  Funciones:
+    - Componente React ProfileFormikForm.
+    - Componente React ProfileFormikForm.
+  Requiere:
+    - Formik para formularios
+    - Módulos locales del proyecto
+    - styled-components para estilos
 */
 
 import { Formik, Form } from "formik";

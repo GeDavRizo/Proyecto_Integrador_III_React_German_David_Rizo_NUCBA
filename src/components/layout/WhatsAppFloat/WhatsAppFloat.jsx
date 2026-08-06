@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/layout/WhatsAppFloat/WhatsAppFloat.jsx
-  Descripción: Layout principal de la aplicación.
+  Descripción: Botón flotante para iniciar una conversación por WhatsApp.
+  Funciones:
+    - Componente React WhatsAppFloat.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import { WhatsAppFloatContainer } from "./WhatsAppFloatStyles.js"

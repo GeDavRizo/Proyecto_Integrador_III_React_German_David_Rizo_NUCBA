@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/cart/CartSidebar/CartSidebar.jsx
-  Descripción: Lógica del carrito de compras.
+  Descripción: Componente que muestra el carrito lateral, resumen de productos y navegación a checkout.
+  Funciones:
+    - Componente React CartSidebar.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Redux
+    - React Router
 */
 
 import { useNavigate } from "react-router-dom";

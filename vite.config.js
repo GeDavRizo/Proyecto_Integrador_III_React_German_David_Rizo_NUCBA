@@ -8,4 +8,7 @@ export default defineConfig({
       include: [/\.[jt]sx?$/],
     }),
   ],
+  build: {
+    chunkSizeWarningLimit: 2000,
+  },
 });

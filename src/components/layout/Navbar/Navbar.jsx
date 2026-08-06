@@ -1,6 +1,13 @@
 /*
-  Archivo: src/components/layout/Navbar/Navbar.jsx
-  Descripción: Barra de navegación principal.
+  Descripción: Archivo fuente del proyecto Navbar.
+  Funciones:
+    - Componente React Navbar.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
+    - React Redux
+    - React Router
+    - react-icons
 */
 
 import { useState, useEffect } from "react";

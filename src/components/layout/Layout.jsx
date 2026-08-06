@@ -1,6 +1,11 @@
 /*
-  Archivo: src/components/layout/Layout.jsx
-  Descripción: Layout principal de la aplicación.
+  Descripción: Archivo fuente del proyecto Layout.
+  Funciones:
+    - Componente React Layout.
+    - Componente React Layout.
+  Requiere:
+    - React
+    - React Router
 */
 
 import { useEffect } from "react";

@@ -1,6 +1,7 @@
 /*
-  Archivo: src/utils/formatPrice.js
-  Descripción: Función para formatear precios.
+  Descripción: Función para formatear valores monetarios.
+  Funciones:
+    - formatPrice
 */
 
 export function formatPrice(value, currency = "eTH") {

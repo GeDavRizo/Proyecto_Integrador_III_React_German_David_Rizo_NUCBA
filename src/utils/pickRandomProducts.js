@@ -1,6 +1,7 @@
 /*
-  Archivo: src/utils/pickRandomProducts.js
-  Descripción: Función para seleccionar productos aleatorios.
+  Descripción: Función para seleccionar productos aleatorios del catálogo.
+  Funciones:
+    - pickRandomProducts
 */
 
 export const pickRandomProducts = (products, cantidad = 6) => {

@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/cart/SuccessModal/SuccessModal.jsx
-  Descripción: Modal de éxito de pago.
+  Descripción: Modal de éxito que muestra la confirmación del pago.
+  Funciones:
+    - Componente React SuccessModal.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import { SuccessModalContainer } from "./SuccessModalStyles.js"

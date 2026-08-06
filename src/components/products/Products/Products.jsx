@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/products/Products/Products.jsx
-  Descripción: Archivo fuente del proyecto.
+  Descripción: Archivo fuente del proyecto Products.
+  Funciones:
+    - Componente React Products.
+  Requiere:
+    - Módulos locales del proyecto
 */
 
 import ProductsGrid from "../ProductsGrid/ProductsGrid";

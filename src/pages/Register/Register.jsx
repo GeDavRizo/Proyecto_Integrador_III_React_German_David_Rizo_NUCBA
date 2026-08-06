@@ -1,6 +1,12 @@
 /*
-  Archivo: src/pages/Register/Register.jsx
-  Descripción: Página React de la aplicación.
+  Descripción: Página de registro de nuevos usuarios.
+  Funciones:
+    - Componente React RegisterPage.
+    - Componente React RegisterPage.
+    - Componente React Register.
+  Requiere:
+    - Módulos locales del proyecto
+    - React Router
 */
 
 import { useAuth } from "../../context/AuthContext";

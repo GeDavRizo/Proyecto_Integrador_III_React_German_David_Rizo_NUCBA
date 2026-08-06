@@ -1,6 +1,10 @@
 /*
-  Archivo: src/components/cart/PaymentModal/PaymentModal.jsx
-  Descripción: Modal de pago en el carrito.
+  Descripción: Modal de selección de método de pago para el carrito.
+  Funciones:
+    - Componente React PaymentModal.
+  Requiere:
+    - Módulos locales del proyecto
+    - React
 */
 
 import { useState } from "react";

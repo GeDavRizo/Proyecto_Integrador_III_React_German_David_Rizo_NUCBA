@@ -1,6 +1,9 @@
 /*
-  Archivo: src/components/home/Novelties/NoveltiesStyles.js
-  Descripción: Sección de novedades del home.
+  Descripción: Estilos del componente o página Novelties.
+  Funciones:
+    - Componente React NoveltiesContainer.
+  Requiere:
+    - styled-components para estilos
 */
 
 import styled from "styled-components";

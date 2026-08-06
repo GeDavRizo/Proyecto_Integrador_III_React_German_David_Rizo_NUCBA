@@ -1,6 +1,13 @@
 /*
-  Archivo: src/redux/store.js
-  Descripción: Módulo Redux para manejar estado.
+  Descripción: Configuración del store de Redux y combinación de slices.
+  Funciones:
+    - store
+    - persistor
+  Requiere:
+    - Módulos locales del proyecto
+    - Redux Toolkit
+    - redux
+    - redux-persist
 */
 
 import { configureStore } from "@reduxjs/toolkit";

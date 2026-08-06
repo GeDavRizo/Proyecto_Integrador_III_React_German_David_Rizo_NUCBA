@@ -1,6 +1,11 @@
 /*
-  Archivo: src/redux/categories/categoriesSlice.js
-  Descripción: Redux slice de categorías.
+  Descripción: Redux slice para manejar el estado de categories.
+  Funciones:
+    - selectCategories
+    - selectActiveCategory
+  Requiere:
+    - Módulos locales del proyecto
+    - Redux Toolkit
 */
 
 import { createSlice } from "@reduxjs/toolkit";

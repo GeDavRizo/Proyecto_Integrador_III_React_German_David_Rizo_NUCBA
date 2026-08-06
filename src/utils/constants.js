@@ -1,6 +1,10 @@
 /*
-  Archivo: src/utils/constants.js
-  Descripción: Constantes del proyecto.
+  Descripción: Define constantes reutilizables para toda la aplicación.
+  Funciones:
+    - Componente React CURRENCIES.
+    - Componente React APP_NAME.
+    - Componente React BASE_URL.
+    - Componente React INITIAL_LIMIT.
 */
 
 export const CURRENCIES = {
