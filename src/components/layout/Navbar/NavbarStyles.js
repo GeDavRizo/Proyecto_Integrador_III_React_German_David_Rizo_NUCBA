@@ -245,9 +245,53 @@ export const NavbarContainer = styled.header`
   }
 
   @media (max-width: 859px) {
+    .nav-inner {
+      justify-content: space-between;
+      padding: 0.85rem 1rem;
+    }
+
+    .logo {
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .logo-text {
+      display: none;
+    }
+
+    .nav-actions {
+      gap: 0.5rem;
+    }
+
     .auth-links,
     .user-menu {
-      display: none;
+      display: none !important;
+    }
+
+    .cart-btn,
+    #hamburger {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .nav-inner {
+      padding: 0.75rem 0.85rem;
+    }
+
+    .nav-actions {
+      gap: 0.5rem;
+    }
+
+    .cart-btn,
+    #hamburger {
+      width: 38px;
+      height: 38px;
     }
   }
 
